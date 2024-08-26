@@ -15,8 +15,8 @@ export Kernel_partition_size="0"            # 内核分区大小,每个机型默
 export Rootfs_partition_size="0"            # 系统分区大小,每个机型默认值不一样 (填写您想要的数值,默认一般300左右,数值以MB计算，填0为不作修改),如果你不懂就填0
 
 # 默认主题设置
-export Mandatory_theme="design"              # 将bootstrap替换您需要的主题为必选主题(可自行更改您要的,源码要带此主题就行,填写名称也要写对) (填写主题名称,填0为不作修改)
-export Default_theme="design"                # 多主题时,选择某主题为默认第一主题 (填写主题名称,填0为不作修改)
+export Mandatory_theme="bootstrap"              # 将bootstrap替换您需要的主题为必选主题(可自行更改您要的,源码要带此主题就行,填写名称也要写对) (填写主题名称,填0为不作修改)
+export Default_theme="bootstrap"                # 多主题时,选择某主题为默认第一主题 (填写主题名称,填0为不作修改)
 
 # 旁路由选项
 export Gateway_Settings="0"                 # 旁路由设置 IPv4 网关(填入您的网关IP为启用)(填0为不作修改)
@@ -41,7 +41,7 @@ export OpenClash_Core="1"                   # 增加OpenClash时,把核心下载
 export Customized_Information="大灰狼 $(TZ=UTC-8 date "+%Y.%m.%d")"  # 个性签名,你想写啥就写啥，(填0为不作修改)
 
 # 更换固件内核
-export Replace_Kernel="0"                    # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
+export Replace_Kernel="6.1"                    # 更换内核版本,在对应源码的[target/linux/架构]查看patches-x.x,看看x.x有啥就有啥内核了(填入内核x.x版本号,填0为不作修改)
 
 # 设置免密码登录(个别源码本身就没密码的)
 export Password_free_login="1"               # 设置首次登录后台密码为空（进入openwrt后自行修改密码）(1为启用命令,填0为不作修改)
@@ -67,7 +67,7 @@ export Cancel_running="0"                    # 取消路由器每天跑分任务
 
 # 晶晨CPU系列打包固件设置(不懂请看说明)
 export amlogic_model="s905d"
-export amlogic_kernel="5.10.01_6.1.01"
+export amlogic_kernel="6.1.01"
 export auto_kernel="true"
 export rootfs_size="2560"
 export kernel_usage="stable"
